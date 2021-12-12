@@ -12,7 +12,7 @@
     }
 
     h2 {
-        font-size: small;
+        font-size: 13px;
         font-weight: 600;
     }
 
@@ -20,7 +20,6 @@
         font-size: 18px;
         font-weight: 600;
         padding-bottom: 8px;
-        color: red;
     }
 
     button {
@@ -186,7 +185,9 @@
       font-size: 10.5px;
   }
 
-
+  .leaflet-container {
+      height:100% !important;
+  }
     
 </style>
 <script type="module">
@@ -242,38 +243,40 @@
 
 <body style="background-color: #F6F7FA;">
     <!-- Main container -->
-    <div class="container" style="max-width: 1440px; padding-top: 24px; padding-left: 20px; 
+    <div class="container" style="position:absolute; max-width: 1440px; top: 24px; bottom: 24px; left: 0; right:0; width:100%; padding-left: 20px; 
     padding-right: 20px; margin-left: auto; margin-right: auto; display: flex;">
 
         <!--  Selections  -->
         <div
-            style="padding-right: 18px;">
+            style="padding-right: 18px; display:flex; flex-flow:column; height:100%">
             <div class="view-container">
                 <!-- <label> Filter</label> -->
                 <div id="observablehq-viewof-homeType-e32e508c" style="font-size:12px"></div>
                 <div id="observablehq-viewof-selected-e32e508c" style="padding-top:4px"></div>
             </div>
             <!--  Map -->
-            <div id="observablehq-mapview-e32e508c" style="padding-top:16px; border-radius: 5px; height:auto;"></div>
+            <div id="observablehq-mapview-e32e508c" style="padding-top:16px; border-radius: 5px; flex:auto;"></div>
         </div>
 
 
         <!--  Comparison  -->
-        <div class="view-container" style=" margin-right:18px; box-sizing: border-box; position: relative;">
-            <!-- <label> Comparison </label> -->
-            <div style="display: flex; font-size: x-small; justify-content: left; margin-bottom: 8px;">
-                <div id="observablehq-favourite_buttons-e32e508c"></div>
-                <div style="display: flex; justify-content: center;"><button id="myBtn" class="primaryButton">Adjust Weights</button></div>
-            </div>
-            <div id="observablehq-viewof-ordering-e32e508c"></div>
-            <div id="observablehq-viewof-final_plot-e32e508c" style="margin-top: 16px;"></div>
-            <div id="observablehq-viewof-legend-e32e508c" style="position: absolute; bottom: 20px; right: 30px;"></div>
+        <div class="view-container" style="margin-right:18px; position:relative; width:554px;">
+                <!-- <label> Comparison </label> -->
+                <div style="display: flex; font-size: x-small; justify-content: left; margin-bottom: 8px;">
+                    <div id="observablehq-favourite_buttons-e32e508c"></div>
+                    <div style="display: flex; justify-content: center;"><button id="myBtn" class="primaryButton">Adjust Weights</button></div>
+                </div>
+                <div id="observablehq-viewof-ordering-e32e508c"></div>
+                <div style="margin-top: 16px; position:absolute; top: 80px; bottom:15px;">
+                    <div id="observablehq-viewof-final_plot-e32e508c" style="overflow-y:scroll; max-height:100%; width:auto;"></div>
+                </div>
+                <div id="observablehq-viewof-legend-e32e508c" style="position: absolute; right: 30px; bottom: 20px; "></div>
         </div>
 
         <!--  Detailed view  -->
         <div class= "view-container"> 
             <!-- <label> Detail</label> -->
-            <div style="overflow-y: scroll; max-height:90vh;">
+            <div style="overflow-y: scroll; max-height:100%">
                 <div id="observablehq-selected_city_text-e32e508c"></div>
                 <div id="observablehq-viewof-final_details-e32e508c"></div>
             </div>
