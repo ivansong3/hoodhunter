@@ -46,7 +46,7 @@
     button {
         align-items: center;
         background-color: #fff;
-        border: 1px solid #dbdbdb;
+        border: 1px solid darkgrey;
         border-radius: .375em;
         box-shadow: none;
         box-sizing: border-box;
@@ -69,6 +69,12 @@
         background-color: #292929;
         border-color: transparent;
         color: #fff;    
+    }
+
+    .disabledButton {
+        border: 1px solid #dbdbdb;
+        color: #BABABA;
+        pointer-events: none;
     }
 
     .weight_label {
@@ -336,12 +342,12 @@
     // console.log("loadtime: " + loadTime);
     // console.log(window.performance);
 
-    if (loadTime > 2000) {
+    if (loadTime > 1500) {
         window.addEventListener('load', function() {
             spinnerWrapper.style.display = 'none';
         });
     } else {
-        setTimeout(function() {spinnerWrapper.style.display = 'none'}, 2000)
+        setTimeout(function() {spinnerWrapper.style.display = 'none'}, 1500)
     };
 
     
