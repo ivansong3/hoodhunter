@@ -2,7 +2,7 @@
 
 > This document describes an explorer visualization tool to support prospective home buyers in narrowing neighbourhoods for a potential home purchase created for the CPSC 547 course. 
 
-***Hood Hunter*** is built within an Observable Notebook (https://observablehq.com/d/7cacdf357c1a5b22) and adapted into an HTML/CSS dashboard hosted as a webapp through Github at https://ivansong3.github.io/hoodhunter/. Our Notebook organization is described [below](#observable-notebook).
+***Hood Hunter*** is built within an Observable Notebook (https://observablehq.com/d/7cacdf357c1a5b22) and adapted into an HTML/CSS dashboard hosted as a webapp through Github at https://ivansong3.github.io/hoodhunter/. The presentation and demo of our tool can also be found [here](https://drive.google.com/file/d/1tq6FK1Pdcm-v3OAZDKlK5WjW9VRtaYl_/view?usp=sharing). Our Notebook organization is described [below](#observable-notebook).
 
 All HTML and CSS styling for the dashboard is our own work with the exception of the weight modal, which is obtained from [W3](https://www.w3schools.com/w3css/w3css_modal.asp). The webapp is standalone and automatically retrieves the source code from our published Observable notebook. 
 
