@@ -20,7 +20,7 @@ Our Observable Notebook is organized with our visual components at the beginning
 
 #### Filter
 
-Our filter is implemented using the crossfilter from the [VegaLite](https://vega.github.io/vega-lite-api/) library and adapted to meet our specifc needs. The [Towns in England and Wales] Observable example implementation of the vegalite crossfilter was used as inspiration. Helper functions were implemented to interface the drop down menu for house type with the crossfilter.
+Our filter is implemented using the crossfilter from the [VegaLite](https://vega.github.io/vega-lite-api/) library and adapted to meet our specifc needs. The [Towns in England and Wales](https://observablehq.com/@rcatlord/towns) Observable example implementation of the vegalite crossfilter was used as inspiration. Helper functions were implemented to interface the drop down menu for house type with the crossfilter.
 
 #### Map
 
